@@ -51,7 +51,7 @@ Step 1. Give priority to opencensus-api-0.23.0.jar
 
 Step 2. Run dev server
 
-(restart if you already have on running)
+(restart if you already have one running)
 
 ```
 mvn appengine:run
