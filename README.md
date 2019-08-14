@@ -2,9 +2,9 @@
 
 https://github.com/spring-cloud/spring-cloud-gcp/issues/1815
 
-# To reproduce issue
+# To reproduce the issue
 
-appengine-web.xml has following configuration
+Ensure appengine-web.xml has following configuration:
 
 ```
   <class-loader-config>
@@ -20,7 +20,7 @@ mvn appengine:run
 [INFO] GCLOUD: INFO: Dev App Server is now running
 ```
 
-Step 2. Access the hello URL
+Step 2. Access the hello URL. You get the error.
 
 ```
 suztomo@suxtomo24:~$ curl localhost:8080/hello
@@ -59,7 +59,7 @@ mvn appengine:run
 [INFO] GCLOUD: INFO: Dev App Server is now running
 ```
 
-Step 3. Access the hello URL
+Step 3. Access the hello URL. You don't get the error.
 
 ```
 suztomo@suxtomo24:~$ curl localhost:8080/hello
